@@ -1,0 +1,691 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+:root {
+  --bg_color1: #1d273e;
+  --bg_color2: #23355e;
+}
+
+nav {
+  display: flex;
+  height: 6em;
+  background: var(--bg_color1);
+  color: white;
+}
+
+nav label {
+  width: 30%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-size: 30px;
+}
+
+nav label:hover {
+  color: aqua;
+}
+
+nav ul {
+  display: flex;
+  width: 65%;
+  justify-content: end;
+  align-items: center;
+  gap: 2em;
+}
+
+nav ul a li {
+  width: 10%;
+  list-style: none;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+nav ul a{
+  text-decoration: none;
+    width: 10%;
+  list-style: none;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+nav ul a li:hover {
+  color: aqua;
+}
+
+nav .h_nav {
+  display: flex;
+}
+nav i {
+  opacity: 0;
+}
+
+.active {
+  color: aqua;
+}
+
+.container {
+  display: flex;
+  color: white;
+  height: 30em;
+  align-items: center;
+  justify-content: center;
+}
+
+.container1 {
+  display: flex;
+  color: white;
+  height: 26em;
+  align-items: center;
+  justify-content: center;
+  gap: 6em;
+}
+
+.bgcolor1 {
+  background-color: var(--bg_color1);
+}
+
+.bgcolor2 {
+  background-color: var(--bg_color2);
+}
+
+.container .container-right {
+  width: 30%;
+}
+
+.container .container-right img {
+  height: 20em;
+  width: 20em;
+  border-bottom-left-radius: 10em;
+  border-bottom-right-radius: 10em;
+}
+.container1 .container-right1 {
+  width: 30%;
+}
+
+.container1 .container-right1 img {
+  height: 20em;
+  width: 30em;
+}
+
+.container .container-left {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  width: 50%;
+}
+
+.container1 .container-left1 {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  width: 50%;
+}
+
+.container .container-left .icons {
+  display: flex;
+  justify-content: space-between;
+  width: 30%;
+  height: fit-content;
+  align-items: center;
+  margin-bottom: 1.5em;
+}
+
+.container .container-left .icons i {
+  outline: 2px solid aqua;
+  color: aqua;
+  border-radius: 30px;
+  font-size: 20px;
+  width: 19%;
+  height: 36px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.container .container-left .icons i:hover {
+  box-shadow: 1px 1px 17px aqua;
+}
+
+.container .container-left .btn {
+  height: 2.5em;
+  width: fit-content;
+  padding: 0 1em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 9px;
+  outline: 3px solid aqua;
+  color: aqua;
+  cursor: pointer;
+}
+
+.container .container-left .btn:hover {
+  background: aqua;
+  color: white;
+}
+
+.container1 .container-left1 .btn {
+  height: 2.5em;
+  width: fit-content;
+  padding: 0 1em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 9px;
+  outline: 3px solid aqua;
+  color: aqua;
+  cursor: pointer;
+}
+
+.container1 .container-left1 .btn:hover {
+  background: aqua;
+  color: white;
+}
+
+.container1 .container-left1 h3 {
+  font-size: 40px;
+}
+.container1 .container-left1 h4 {
+  font-size: 20px;
+}
+.container1 .container-left1 p {
+  display: flex;
+}
+
+.container .container-left h2 {
+  font-size: 50px;
+}
+.container .container-left h4 {
+  font-size: 25px;
+}
+.container .container-left h5 {
+  display: flex;
+  width: 80%;
+}
+
+
+
+#services {
+  display: flex;
+  flex-direction: column;
+  background: var(--bg_color1);
+  color: white;
+  height: 34em;
+  gap: 2em;
+}
+
+#services h2 {
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  height: 2em;
+  font-size: 40px;
+}
+
+#services .cardContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: fit-content;
+  gap: 4em;
+}
+
+#services .cardContainer .card {
+  width: 25%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 23em;
+  gap: 1em;
+  background-color: var(--bg_color2);
+  border-radius: 25px;
+  cursor: pointer;
+}
+
+#services .cardContainer .card:hover {
+  box-shadow: 1px 1px 17px aqua;
+}
+
+#services .cardContainer .card i {
+  color: aqua;
+  font-size: 32px;
+}
+
+#services .cardContainer .card h4 {
+  font-size: 28px;
+  color: aqua;
+}
+
+#services .cardContainer .card p {
+  width: 82%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+#services .cardContainer .card .btn {
+  height: 2.5em;
+  width: fit-content;
+  padding: 0 1em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 9px;
+  outline: 3px solid aqua;
+  color: aqua;
+}
+
+#services .cardContainer .card .btn:hover {
+  background: aqua;
+  color: white;
+}
+
+#project {
+  background: var(--bg_color2);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  height: 33em;
+}
+
+#project h4 {
+  height: 3em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 40px;
+}
+
+#project .imgContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 3em;
+}
+
+#project .imgContainer .img1 {
+  display: flex;
+  width: 80%;
+  justify-content: center;
+  align-items: center;
+  gap: 4em;
+}
+
+#project .imgContainer .img1 img {
+  height: 10em;
+  width: 15em;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+#project .imgContainer .img1 img:hover {
+  box-shadow: 1px 1px 17px aqua;
+}
+
+#contact {
+  background-color: var(--bg_color1);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: flex-start;
+  height: 29em;
+}
+
+#contact h4 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 3em;
+  color: white;
+  font-size: 40px;
+}
+
+#contact .contactContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  justify-content: center;
+  align-items: center;
+}
+
+#contact .contactContainer .inputContainer1 {
+  display: flex;
+  gap: 1em;
+}
+
+#contact .contactContainer .inputContainer1 input {
+  height: 2.5em;
+  border: none;
+  outline: 3px solid var(--bg_color2);
+  border-radius: 7px;
+  padding: 0 1em;
+  background: var(--bg_color2);
+  caret-color: aqua;
+  color: aqua;
+  width: 100%;
+}
+
+#contact .contactContainer textarea {
+  height: 11em;
+  border: none;
+  outline: 3px solid var(--bg_color2);
+  border-radius: 7px;
+  padding: 1.5em 1.5em;
+  background: var(--bg_color2);
+  caret-color: aqua;
+  color: aqua;
+  width: 100%;
+  font-size: 15px;
+}
+#contact .contactContainer .btn {
+  height: 2.5em;
+  width: fit-content;
+  padding: 0 1em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 9px;
+  outline: 3px solid aqua;
+  color: aqua;
+  cursor: pointer;
+}
+
+#contact .contactContainer .btn:hover {
+  background-color: aqua;
+  color: white;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 4em;
+  background: var(--bg_color2);
+  color: white;
+}
+
+footer h4 {
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+  nav {
+    position: relative;
+  }
+  nav label {
+    width: 50%;
+  }
+
+  nav ul {
+    display: none;
+  }
+
+  nav i {
+    position: absolute;
+    right: 23px;
+    top: 1em;
+    font-size: 33px;
+    color: aqua;
+    opacity: 1;
+  }
+
+  nav .h_nav {
+    flex-direction: column;
+    height: 46em;
+    justify-content: center;
+    background: var(--bg_color2);
+    width: 100%;
+    display: none;
+    transition: 0.5s ease-in-out;
+    position: absolute;
+    right: -20em;
+  }
+
+  nav #close {
+    display: none;
+    position: absolute;
+    right: 1em;
+    top: 33px;
+    font-size: 50px;
+  }
+
+  .container {
+    flex-direction: column-reverse;
+    height: 52em;
+    gap: 1em;
+  }
+
+  .container .container-left {
+    width: 85%;
+  }
+
+  .container .container-left h2 {
+    font-size: 35px;
+  }
+  .container .container-left h4 {
+    font-size: 20px;
+  }
+
+  .container .container-left .icons {
+    width: 70%;
+  }
+
+  .container .container-right {
+    width: 100%;
+  }
+
+  .container1 {
+    flex-direction: column;
+    height: 39em;
+    gap: 0;
+  }
+
+  .container1 .container-left1 {
+    width: 85%;
+  }
+
+  .container1 .container-right1 {
+    width: 100%;
+  }
+
+  .container1 .container-right1 img {
+    height: 15em;
+    width: 20em;
+  }
+  #services {
+    height: 87em;
+  }
+
+  #services h2 {
+    font-size: 35px;
+  }
+
+  #services .cardContainer {
+    flex-direction: column;
+    height: fit-content;
+    gap: 2em;
+  }
+
+  #services .cardContainer .card {
+    width: 85%;
+    height: 24em;
+  }
+
+  #project {
+    height: 82em;
+  }
+
+  #project h4 {
+    font-size: 35px;
+  }
+
+  #project .imgContainer .img1 {
+    flex-direction: column;
+    gap: 2em;
+  }
+
+  #contact {
+    height: 36em;
+  }
+
+  #contact h4 {
+    font-size: 35px;
+  }
+
+  #contact .contactContainer .inputContainer1 {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  #contact .contactContainer .inputContainer1 input {
+    width: 100%;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+  nav .h_nav {
+    display: flex;
+  }
+  .container {
+    flex-direction: column-reverse;
+    height: 52em;
+    gap: 1em;
+  }
+
+  .container .container-left {
+    width: 85%;
+  }
+
+  .container .container-left h2 {
+    font-size: 35px;
+  }
+  .container .container-left h4 {
+    font-size: 20px;
+  }
+
+  .container .container-left .icons {
+    width: 70%;
+  }
+
+  .container .container-right {
+    width: 100%;
+  }
+
+  .container1 {
+    flex-direction: column;
+    height: 39em;
+    gap: 0;
+  }
+
+  .container1 .container-left1 {
+    width: 85%;
+  }
+
+  .container1 .container-right1 {
+    width: 100%;
+  }
+
+  #services {
+    height: 75em;
+  }
+
+  #services .cardContainer {
+    flex-direction: column;
+    height: fit-content;
+    gap: 2em;
+  }
+
+  #services .cardContainer .card {
+    width: 85%;
+    height: 20em;
+  }
+
+  #project {
+    height: 41em;
+  }
+
+  #project .imgContainer {
+    flex-direction: row;
+  }
+
+  #project .imgContainer .img1 {
+    flex-direction: column;
+    width: 37%;
+    gap: 2em;
+  }
+
+  #project .imgContainer .img1 img {
+    height: 9em;
+    width: 12em;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .container1 {
+    gap: 0;
+  }
+
+  .container1 .container-right1 {
+    width: 45%;
+  }
+
+  .container1 .container-right1 img {
+    height: 18em;
+    width: 20em;
+  }
+
+  .container .container-left .icons {
+    width: 53%;
+  }
+
+  #services {
+    height: 37em;
+  }
+
+  #services .cardContainer {
+    gap: 1em;
+  }
+
+  #services .cardContainer .card {
+    width: 30%;
+    height: 27em;
+  }
+
+  #services .cardContainer .card h4 {
+    font-size: 25px;
+    color: aqua;
+  }
+
+  #project .imgContainer .img1 {
+    width: 100%;
+    gap: 1em;
+  }
+
+  #project .imgContainer .img1 img {
+    width: 14em;
+  }
+}
+
+@media (min-width: 1025px) and (max-width: 1200px) {
+  .container .container-left .icons {
+    width: 40%;
+  }
+
+  .container1 .container-right1 img {
+    width: 25em;
+  }
+}

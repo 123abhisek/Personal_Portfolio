@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="./css/index.css" />
+    <link rel="stylesheet" href="./css/all.css" />
+  </head>
+  <body>
+    <nav id="home">
+      <label for="">Portfolio</label>
+      <ul class="h_nav">
+        <a href="#home"><li class="active">Home</li></a>
+        <a href="#services"><li>Skills</li></a>
+        <a href="#project"><li>Projects</li></a>
+        <a href="https://github.com/123abhisek"><li>GitHub</li></a>
+        <a href="#contact"><li>Contact</li></a>
+      </ul>
+      <i class="fa-solid fa-bars-staggered" id="bars" onclick="nav_open()"></i>
+      <i class="fa-solid fa-xmark" id="close" onclick="nav_open()"></i>
+    </nav>
+
+    <section class="container bgcolor1">
+      <div class="container-left">
+        <h4>Hello, Its's Me</h4>
+        <h2>Abhishek R Juvatkar</h2>
+
+        <h4>
+          And I'm a
+          <span style="color: aqua" class="effect_typing">
+            Full Stack Developer
+          </span>
+        </h4>
+        <h5>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Inventore
+          sed culpa magni minus voluptates perferendis alias eligendi ab dicta
+          nisi accusamus quas dolorum, rerum officia deserunt eos accusantium
+          quibusdam deleniti!
+        </h5>
+        <div class="icons">
+          <i class="fa-brands fa-facebook-f" onclick="openLink(`www.facebook.com/ashish.juvatkar.1/`)"></i>
+          <i class="fa-brands fa-github" onclick="openLink('github.com/123abhisek')"></i>
+          <i class="fa-brands fa-linkedin-in" onclick="openLink('www.linkedin.com/in/%F0%9D%99%B0bhishek-%F0%9D%99%B9uvatkar-854758231/')"></i>
+          <i class="fa-brands fa-instagram" onclick="openLink('www.instagram.com/juvatkarashish/')"></i>
+        </div>
+        <div class="btn" onclick="downloadFile()">Download CV</div>
+      </div>
+      <div class="container-right">
+        <img src="./img/perfil.png" alt="" />
+      </div>
+    </section>
+
+    <section class="container1 bgcolor2">
+      <div class="container-right1">
+        <img src="./img/about_us.png" alt="" />
+      </div>
+      <div class="container-left1">
+        <h3>About <span style="color: aqua"> Me</span></h3>
+        <h4>Frontend Developer</h4>
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Blanditiis
+          cupiditate velit dicta architecto enim adipisci quisquam, veniam
+          maiores maxime, dolorem sed quam nemo quidem. Delectus similique
+          dolore quaerat eligendi quos.
+        </p>
+        <div class="btn">Read More</div>
+      </div>
+    </section>
+
+    <section id="services">
+      <h2>Our <span style="color: aqua; margin-left: 10px"> Services</span></h2>
+      <div class="cardContainer">
+        <div class="card">
+          <i class="fa fa-code" aria-hidden="true"></i>
+          <h4>Web Development</h4>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+            Consequuntur accusamus suscipit est dolore quibusdam, accusantium
+            natus officia reiciendis architecto tempora delectus laboriosam,
+            consectetur quia inventore qui, fugit error eveniet tenetur.
+          </p>
+          <div class="btn">Read More</div>
+        </div>
+
+        <div class="card">
+          <i class="fa-solid fa-pen"></i>
+          <h4>Graphic Design</h4>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+            Consequuntur accusamus suscipit est dolore quibusdam, accusantium
+            natus officia reiciendis architecto tempora delectus laboriosam,
+            consectetur quia inventore qui, fugit error eveniet tenetur.
+          </p>
+          <div class="btn">Read More</div>
+        </div>
+
+        <div class="card">
+          <i class="fa-brands fa-android"></i>
+          <h4>App Development</h4>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+            Consequuntur accusamus suscipit est dolore quibusdam, accusantium
+            natus officia reiciendis architecto tempora delectus laboriosam,
+            consectetur quia inventore qui, fugit error eveniet tenetur.
+          </p>
+          <div class="btn">Read More</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="project">
+      <h4>
+        Latest <span style="color: aqua; margin-left: 10px"> Project</span>
+      </h4>
+      <div class="imgContainer">
+        <div class="img1">
+          <img src="./img/img1.jpg" alt="" />
+          <img src="./img/img2.jpg" alt="" />
+          <img src="./img/img3.jpg" alt="" />
+        </div>
+        <div class="img1">
+          <img src="./img/img4.jpg" alt="" />
+          <img src="./img/img5.jpg" alt="" />
+          <img src="./img/img6.jpg" alt="" />
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h4>Contact <span style="color: aqua; margin-left: 10px"> Me!</span></h4>
+      <div class="contactContainer">
+        <div class="inputContainer1">
+          <input type="text" placeholder="Full Name" />
+          <input type="text" placeholder="Last Name" />
+        </div>
+        <div class="inputContainer1">
+          <input type="text" placeholder="Mobile Number" />
+          <input type="text" placeholder="Phone Number" />
+        </div>
+        <textarea
+          name=""
+          placeholder="Description"
+          id=""
+          cols="30"
+          rows="10"
+        ></textarea>
+        <div class="btn">Send Message</div>
+      </div>
+    </section>
+
+    <footer><h4>&copy;copyright 2023 by Abhishek R J</h4></footer>
+    <script src="./js/index.js"></script>
+  </body>
+</html>
